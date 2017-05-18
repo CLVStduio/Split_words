@@ -10,7 +10,7 @@ import org.ansj.splitWord.analysis.IndexAnalysis;
 import org.ansj.splitWord.analysis.NlpAnalysis;
 import org.ansj.splitWord.analysis.ToAnalysis;
 
-public class test {
+public class testSplitWord {
 	public static void main(String[] args){
 //		String str = "画面流畅         对于一个不爱升级的人来说每次强制升级都让人想要弃了苹果，要是不让用干脆别出软件啊，还浪费内存呢";
 //		System.out.println(BaseAnalysis.parse(str));

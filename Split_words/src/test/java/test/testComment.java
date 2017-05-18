@@ -7,8 +7,9 @@ import org.junit.Test;
 
 import cn.clvstudio.webcrawling.CommentMyapp;
 import cn.clvstudio.webcrawling.GetComment;
+import junit.framework.TestCase;
 
-public class TestCase {
+public class testComment extends TestCase {
 	/**
 	 * 单次爬取应用宝评论数据
 	 */
@@ -35,7 +36,7 @@ public class TestCase {
 	/**
 	 * 多次自动爬取应用宝评论数据测试
 	 */
-//	@Test
+	@Test
 	public void test2(){
 		String apkName = "com.tencent.mobileqq";
 		String apkCode = "676";
