@@ -29,7 +29,7 @@ public class GetComment{
 	 * @param contextData
 	 * @return
 	 */
-	private static String postResponse(String requestUrl,String apkName,String apkCode,String p,String fresh,String contextData){
+	private static String postResponse(String requestUrl,String apkName,String apkCode,int p,String fresh,String contextData){
 		String content = null;
 		try {
 		    /** post方式 */
@@ -38,7 +38,7 @@ public class GetComment{
 		    // 参数设置
 		    postMethod.setParameter("apkName",apkName);
 		    postMethod.setParameter("apkCode",apkCode);
-		    postMethod.setParameter("p",p);
+		    postMethod.setParameter("p",Integer.toString(p));
 		    postMethod.setParameter("fresh",fresh);
 		    postMethod.setParameter("contextData",contextData);
 		    // 执行postMethod
@@ -103,7 +103,7 @@ public class GetComment{
      *  对以上两个方法进行封装。
       * @return 
       */  
-     public static Map<String, Object> getCommentMap(String apkName,String apkCode,String p,String fresh,String contextData) {  
+     public static Map<String, Object> getCommentMap(String apkName,String apkCode,int p,String fresh,String contextData) {  
     	 
          String response = postResponse("http://android.myapp.com/myapp/app/comment.htm",apkName,apkCode,p,fresh,contextData);  
          Map<String, Object> commentMap= getComment(response);  
