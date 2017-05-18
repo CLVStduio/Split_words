@@ -4,4 +4,21 @@
   <artifactId>Split_words</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  <dependencies>
+  	<dependency>
+  		<groupId>jexcelapi</groupId>
+  		<artifactId>jxl</artifactId>
+  		<version>2.6.9</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>commons-httpclient</groupId>
+  		<artifactId>commons-httpclient</artifactId>
+  		<version>3.1</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.json</groupId>
+  		<artifactId>json</artifactId>
+  		<version>20090211</version>
+  	</dependency>
+  </dependencies>
 </project>
