@@ -1,8 +1,11 @@
 package test;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.httpclient.HttpException;
+import org.json.JSONException;
 import org.junit.Test;
 
 import cn.clvstudio.webcrawling.CommentMyapp;
@@ -12,9 +15,12 @@ import junit.framework.TestCase;
 public class testComment extends TestCase {
 	/**
 	 * 单次爬取应用宝评论数据
+	 * @throws JSONException 
+	 * @throws IOException 
+	 * @throws HttpException 
 	 */
 	@Test
-	public void test1(){
+	public void test1() throws HttpException, IOException, JSONException{
 		String apkName = "com.tencent.mobileqq";
 		String apkCode = "676";
 		String fresh = "0.8325424489262343";
@@ -35,9 +41,12 @@ public class testComment extends TestCase {
 	}
 	/**
 	 * 多次自动爬取应用宝评论数据测试
+	 * @throws JSONException 
+	 * @throws IOException 
+	 * @throws HttpException 
 	 */
 	@Test
-	public void test2(){
+	public void test2() throws HttpException, IOException, JSONException{
 		String apkName = "com.tencent.mobileqq";
 		String apkCode = "676";
 		String fresh = "0.8325424489262343";
